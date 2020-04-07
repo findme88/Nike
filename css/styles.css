@@ -86,9 +86,9 @@ body, html {
 }
 
 .container {
-  width: 800px;
-  height: 600px;
-  background: url("../images/Layer1.png"), url("../images/Layer2.png"), url("../images/Layer3.png"), url("../images/Layer7.png");
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/Layer1.png") no-repeat center center, url("../images/Layer2.png") no-repeat center center, url("../images/Layer3.png") no-repeat center center, url("../images/Layer7.png") no-repeat center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,6 +98,7 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 200px;
 }
 
 .nike {

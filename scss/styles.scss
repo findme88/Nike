@@ -11,14 +11,16 @@
 
 $color-text: #e1e1e1;
 
+
 .container {
-  width: 800px;
-  height: 600px;
-  background: url("../images/Layer1.png"), url("../images/Layer2.png"),
-    url("../images/Layer3.png"), url("../images/Layer7.png");
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/Layer1.png") no-repeat center center, url("../images/Layer2.png") no-repeat center center,
+    url("../images/Layer3.png")no-repeat center center, url("../images/Layer7.png") no-repeat center center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
 }
 
 .nike {
