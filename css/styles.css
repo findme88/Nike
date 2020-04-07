@@ -107,6 +107,10 @@ body, html {
   position: absolute;
 }
 
+.nike__logo {
+  padding: 24px 21px;
+}
+
 .nike__picture {
   position: absolute;
   bottom: 106px;

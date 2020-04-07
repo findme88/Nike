@@ -26,6 +26,10 @@ $color-text: #e1e1e1;
   height: 391px;
   background-color: #111a28;
   position: absolute;
+
+  &__logo {
+    padding: 24px 21px;
+  }
   &__picture {
     position: absolute;
     bottom: 106px;
