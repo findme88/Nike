@@ -151,7 +151,7 @@ body, html {
 }
 
 .nike__submit {
-  padding: 29px 0 43px;
+  padding: 29px 0 23px;
 }
 
 .nike__input {
@@ -194,5 +194,73 @@ body, html {
 
 #nike__stars label:hover i, #review_stars label:hover ~ label i {
   color: #ec9801;
+}
+
+.custom-radios {
+  position: relative;
+  right: 260px;
+}
+
+.custom-radios div {
+  display: inline-block;
+}
+
+.custom-radios input[type="radio"] {
+  display: none;
+}
+
+.custom-radios input[type="radio"] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.custom-radios input[type="radio"] + label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -1px 2px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+
+.custom-radios input[type="radio"] + label span img {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-radios input[type="radio"]#color-1 + label span {
+  background-color: #1f273f;
+}
+
+.custom-radios input[type="radio"]#color-2 + label span {
+  background-color: #ffffff;
+}
+
+.custom-radios input[type="radio"]#color-3 + label span {
+  background-color: #ed3333;
+}
+
+.custom-radios input[type="radio"]#color-4 + label span {
+  background-color: #29e3ea;
+}
+
+.custom-radios input[type="radio"]:checked + label span {
+  opacity: 1;
+  border: 2px solid rgba(168, 168, 168, 0.46);
+}
+
+.custom-radios input[type="radio"]:checked + label span img {
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

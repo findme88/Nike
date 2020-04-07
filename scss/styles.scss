@@ -8,6 +8,9 @@
 
 // Page styles
 @import "modules/_header";
+
+$color-text: #e1e1e1;
+
 .container {
   width: 800px;
   height: 600px;
@@ -36,7 +39,7 @@
   &__title {
     font-size: 24px;
     font-weight: 100;
-    color: #e1e1e1;
+    color: $color-text;
     letter-spacing: 0.48px;
   }
   &__desc {
@@ -57,14 +60,14 @@
     height: 32px;
     font-size: 14px;
     font-weight: 100;
-    color: #e1e1e1;
+    color: $color-text;
     background-color: #111a28;
     border: 1px solid #ffffff;
     text-align-last: center;
   }
 
   &__submit {
-    padding: 29px 0 43px;
+    padding: 29px 0 23px;
   }
 
   &__input {
@@ -72,15 +75,16 @@
     height: 40px;
     font-size: 14px;
     font-weight: 100;
-    color: #e1e1e1;
+    color:$color-text;
     background: #4c525a;
     border: 1px solid rgba(225, 225, 225, 0.26);
     
   }
 
-  
+
 }
 
+  // STARS
 #nike__stars {
   overflow: hidden;
   position: relative;
@@ -106,4 +110,81 @@
 }
 #nike__stars label:hover i, #review_stars label:hover ~ label i{
   color: #ec9801;
+}
+
+// Colors for radio
+$color-1: #1f273f;
+$color-2: #ffffff;
+$color-3: #ed3333;
+$color-4: #29e3ea;
+
+.custom-radios {
+
+  position: relative;
+  right: 260px;
+  
+  div {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    + label {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+
+      span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: -1px 2px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+        
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        line-height: 44px;
+        
+    
+        img {
+          opacity: 0;
+          transition: all .3s ease;
+          width: 10px;
+          margin-bottom: 15px;
+                    
+        }
+      }
+    }
+
+    &#color-1 + label span {
+      background-color: $color-1;
+    }
+
+    &#color-2 + label span {
+      background-color: $color-2;
+    }
+
+    &#color-3 + label span {
+      background-color: $color-3;
+    }
+
+    &#color-4 + label span {
+      background-color: $color-4;
+    }
+
+    &:checked + label span {
+      opacity: 1;
+      border: 2px solid rgba(168, 168, 168, 0.46);
+     
+    }
+
+    &:checked + label span img {
+      opacity: 1;
+  }
+}
 }
