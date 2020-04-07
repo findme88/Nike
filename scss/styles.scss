@@ -1,0 +1,109 @@
+// Base
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_reset";
+
+// Layout
+@import "layout/_general";
+
+// Page styles
+@import "modules/_header";
+.container {
+  width: 800px;
+  height: 600px;
+  background: url("../images/Layer1.png"), url("../images/Layer2.png"),
+    url("../images/Layer3.png"), url("../images/Layer7.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nike {
+  width: 686px;
+  height: 391px;
+  background-color: #111a28;
+  position: absolute;
+  &__picture {
+    position: absolute;
+    bottom: 106px;
+    left: 36px;
+  }
+  &__form {
+    position: absolute;
+    left: 421px;
+    top: 78px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 100;
+    color: #e1e1e1;
+    letter-spacing: 0.48px;
+  }
+  &__desc {
+      font-size: 14px;
+      font-weight: 100;
+      color: rgba(225, 225, 225, 0.54);
+      letter-spacing: 0.28px;
+      padding: 16px 0 24px;
+  }
+
+  &__stars_wrap {
+    overflow: hidden;
+    padding-bottom: 27px;
+  }
+
+  &__select {
+    width: 69px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #e1e1e1;
+    background-color: #111a28;
+    border: 1px solid #ffffff;
+    text-align-last: center;
+  }
+
+  &__submit {
+    padding: 29px 0 43px;
+  }
+
+  &__input {
+    width: 184px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #e1e1e1;
+    background: #4c525a;
+    border: 1px solid rgba(225, 225, 225, 0.26);
+    
+  }
+
+  
+}
+
+#nike__stars {
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+#nike__stars input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#nike__stars input ~ label i{
+  color:#ccc;
+}
+#nike__stars input:checked ~ label i{
+  color: #ec9801;
+}
+#nike__stars label {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+#nike__stars label:hover i, #review_stars label:hover ~ label i{
+  color: #ec9801;
+}
