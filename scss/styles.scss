@@ -81,6 +81,16 @@ $color-text: #e1e1e1;
     
   }
 
+  &__input:hover {
+    background: #43464b;
+
+  }
+
+  &__input:active {
+    background: #5d6064;
+
+  }
+
 
 }
 
@@ -118,7 +128,7 @@ $color-2: #ffffff;
 $color-3: #ed3333;
 $color-4: #29e3ea;
 
-.custom-radios {
+.nike__radios {
 
   position: relative;
   right: 260px;
@@ -156,7 +166,7 @@ $color-4: #29e3ea;
           transition: all .3s ease;
           width: 10px;
           margin-bottom: 15px;
-                    
+                              
         }
       }
     }
@@ -185,6 +195,7 @@ $color-4: #29e3ea;
 
     &:checked + label span img {
       opacity: 1;
+      
   }
 }
 }

@@ -164,6 +164,14 @@ body, html {
   border: 1px solid rgba(225, 225, 225, 0.26);
 }
 
+.nike__input:hover {
+  background: #43464b;
+}
+
+.nike__input:active {
+  background: #5d6064;
+}
+
 #nike__stars {
   overflow: hidden;
   position: relative;
@@ -196,26 +204,26 @@ body, html {
   color: #ec9801;
 }
 
-.custom-radios {
+.nike__radios {
   position: relative;
   right: 260px;
 }
 
-.custom-radios div {
+.nike__radios div {
   display: inline-block;
 }
 
-.custom-radios input[type="radio"] {
+.nike__radios input[type="radio"] {
   display: none;
 }
 
-.custom-radios input[type="radio"] + label {
+.nike__radios input[type="radio"] + label {
   color: #333;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-.custom-radios input[type="radio"] + label span {
+.nike__radios input[type="radio"] + label span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -231,7 +239,7 @@ body, html {
   line-height: 44px;
 }
 
-.custom-radios input[type="radio"] + label span img {
+.nike__radios input[type="radio"] + label span img {
   opacity: 0;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -239,28 +247,28 @@ body, html {
   margin-bottom: 15px;
 }
 
-.custom-radios input[type="radio"]#color-1 + label span {
+.nike__radios input[type="radio"]#color-1 + label span {
   background-color: #1f273f;
 }
 
-.custom-radios input[type="radio"]#color-2 + label span {
+.nike__radios input[type="radio"]#color-2 + label span {
   background-color: #ffffff;
 }
 
-.custom-radios input[type="radio"]#color-3 + label span {
+.nike__radios input[type="radio"]#color-3 + label span {
   background-color: #ed3333;
 }
 
-.custom-radios input[type="radio"]#color-4 + label span {
+.nike__radios input[type="radio"]#color-4 + label span {
   background-color: #29e3ea;
 }
 
-.custom-radios input[type="radio"]:checked + label span {
+.nike__radios input[type="radio"]:checked + label span {
   opacity: 1;
   border: 2px solid rgba(168, 168, 168, 0.46);
 }
 
-.custom-radios input[type="radio"]:checked + label span img {
+.nike__radios input[type="radio"]:checked + label span img {
   opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
